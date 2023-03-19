@@ -29,3 +29,23 @@
     }
   }
 }
+
+.on_cancel__button {
+    background-color: #282828;
+    color: #fff;
+    border: 1px solid #282828;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    @include noselect();
+
+    &:hover {
+        background-color: darken(#282828, 2%);
+    }
+
+    &:active {
+        background-color: darken(#282828, 5%);
+    }
+}
