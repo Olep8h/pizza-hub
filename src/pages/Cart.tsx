@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { CartItem, CartEmpty } from '../components';
-
 import { selectCart } from '../redux/cart/selectors';
 import { clearItems } from '../redux/cart/slice';
+import Modal from "../components/Modal/Modal";
 
 const Cart: React.FC = () => {
   const dispatch = useDispatch();
@@ -13,10 +12,18 @@ const Cart: React.FC = () => {
 
   const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
 
-  const onClickClear = () => {
-    if (window.confirm('Vyprázdnit koš?')) {
-      dispatch(clearItems());
+  const [isModalOpnen, setIsModalOpnen] = React.useState(false);
+
+  const onCorfirm = () => {
+    dispatch(clearItems());
+    setIsModalOpnen(false);
+  }
+    const onCancel = () => {
+    setIsModalOpnen(false);
     }
+
+  const onClickClear = () => {
+      setIsModalOpnen(true);
   };
 
   if (!totalPrice) {
@@ -55,6 +62,8 @@ const Cart: React.FC = () => {
             </svg>
             Košík
           </h2>
+           {isModalOpnen && <Modal message={'Opravdu chcete vyprázdnit koš?'} onConfirm={onCorfirm} onCancel={onCancel}
+          />}
           <div onClick={onClickClear} className="cart__clear">
             <svg
               width="20"
