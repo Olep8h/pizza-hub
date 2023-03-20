@@ -31,7 +31,7 @@
 
 <h2>Contributing</h2>
 
-<p>If you find any problems or bugs while using the app, please let me know by creating a problem in the GitHub repository - https://github.com/USERNAME/pizza-hub.</p>
+<p>If you find any problems or bugs while using the app, please let me know by creating a problem in the GitHub repository - https://github.com/Olep8h/pizza-hub.</p>
 
 <p>I welcome contributions to the project. And if you want to contribute, please do a repository fork and make your changes in a separate thread. Once you have completed your changes, submit a patch request and we will review your changes.</p>
 
