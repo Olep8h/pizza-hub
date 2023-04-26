@@ -1,6 +1,6 @@
 <h1>Pizza-Hub</h1>
 
-<p>Pizza-Hub is a commercial pizza ordering web application developed for a small Czech pizzeria. With this app, customers can choose their favorite pizzas from different categories and filter them based on their preferences. The app also allows customers to choose the size and dough of their pizza.</p>
+<p>Pizza-Hub is a prototype of commercial pizza ordering web application developed for a small Czech pizzeria. With this app, customers can choose their favorite pizzas from different categories and filter them based on their preferences. The app also allows customers to choose the size and dough of their pizza.</p>
 
 <h2>Technologies Stack</h2>
 
